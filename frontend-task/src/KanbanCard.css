@@ -1,0 +1,112 @@
+.kanban-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 150px;
+  }
+  
+  /* Ticket ID styling */
+  .ticket-id {
+    font-size: 14px;
+    color: #888;
+    font-weight: bold;
+  }
+  
+  /* Title styling */
+  .ticket-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  /* Priority and status section */
+  .ticket-meta {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  
+  /* Priority icon styling */
+  .priority-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .priority-icon img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Status styling */
+  .status {
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .status-icon{
+    padding-right: 10px;
+  }
+  
+  .status img {
+    width: 16px;
+    height: 16px;
+  }
+  
+  /* Status Indicator (the small circular indicator next to the status) */
+  .status-indicator {
+    background-color: #ccc;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+  }
+  
+  /* Priority background colors for fallback cases (if SVG fails) */
+  .priority-icon.urgent {
+    background-color: #ff5c5c;
+    border-radius: 50%;
+    padding: 8px;
+  }
+  
+  .priority-icon.high {
+    background-color: #ff8a3d;
+    border-radius: 50%;
+    padding: 8px;
+  }
+  
+  .priority-icon.medium {
+    background-color: #ffd36b;
+    border-radius: 50%;
+    padding: 8px;
+  }
+  
+  .priority-icon.low {
+    background-color: #8bc34a;
+    border-radius: 50%;
+    padding: 8px;
+  }
+  
+  /* User avatar styling */
+  .user-avatar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .user-avatar img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
